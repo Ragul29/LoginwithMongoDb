@@ -3,7 +3,7 @@
 <head><meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Sign In</title>
-<!-- <canvas id="c"></canvas> -->
+
 <link rel="stylesheet" href="css/stylesheet.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -16,7 +16,8 @@
 <style>
 
 body {
-  background-image: url('img/lubo-minar-TrpdzVh2_pE-unsplash.jpg');
+ /*  background-image: url('img/lubo-minar-TrpdzVh2_pE-unsplash.jpg'); */
+   background-image: linear-gradient(to right top, #0F2027,#203A43,#2C5364);
   background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -39,22 +40,16 @@ position: relative;
                     <p style="color: azure;"> Please enter your Credentials</p> 
                     <input type="text" name="username" id="username" placeholder="Username"  required="required">
                      <input type="password" name="password" id="password" placeholder="Password"  required="required">
-                     <!--  <a class="forgot text-muted" href="#">Forgot password?</a>  -->
+                    
                       <input type="submit" name="submit" value="Login"> 
-                      <!--  <button type="submit" style="background-color: darkcyan !important;">Shoot!!!</button> -->
+                     
                        </form>
                        <br><form action="/register" class="smallbox" style="top: 440px;" method="get">
                          <input type="submit" name="submit" value="Register"> 
                           <span th:if="${param.loginError}"style=" color: darkorange;" >Incorrect Credentials</span>
                          </form>
                         
-                   <!--  <div class="col-md-12">
-                        <ul class="social-network social-circle">
-                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
-                        </ul>
-                    </div> -->
+                
                 
             </div>
         </div>
