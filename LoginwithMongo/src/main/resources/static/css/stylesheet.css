@@ -259,7 +259,7 @@
     padding-left: 0px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60;
     background: transparent;
     text-align: center;
     transition: 0.25s;
@@ -274,7 +274,7 @@
         
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 70;
         background: transparent;
         ;
         text-align: center;
