@@ -1,0 +1,64 @@
+
+<html xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sf="http://www.w3.org/1999/xhtml" lang="en">
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sign In</title>
+<!-- <canvas id="c"></canvas> -->
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+<link rel="javascript" href="js/bootstrap.min.js">
+<link rel="javascript" href="js/jquery.min.js">
+<link rel="icon" href="img/bussiness-man.png">
+</head>
+<style>
+
+body {
+  background-image: url('img/lubo-minar-TrpdzVh2_pE-unsplash.jpg');
+  background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.card
+{
+position: relative;
+
+}
+
+</style> 
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="background-color:transparent !important">
+                <form action="/login" class="box" method="post">
+                    <h1>Sign in</h1>
+                    <p style="color: azure;"> Please enter your Credentials</p> 
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                     <input type="password" name="password" id="password" placeholder="Password" required>
+                     <!--  <a class="forgot text-muted" href="#">Forgot password?</a>  -->
+                      <input type="submit" name="submit" value="Login"> 
+                      <!--  <button type="submit" style="background-color: darkcyan !important;">Shoot!!!</button> -->
+                       </form>
+                       <br><form action="/register" class="smallbox" style="top: 440px;" method="get">
+                         <input type="submit" name="submit" value="Register"> 
+                          <span th:if="${param.loginError}"style=" color: darkorange;" >Incorrect Credentials</span>
+                         </form>
+                        
+                   <!--  <div class="col-md-12">
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                        </ul>
+                    </div> -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
