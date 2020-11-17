@@ -12,6 +12,23 @@
 <link rel="javascript" href="js/jquery.min.js">
 
 <style>
+/* <!--newly addded--> */
+.container
+{
+width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col-md-6{
+position: relative;
+    width: 0%;
+    min-height: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    }
+/* <!--newly addded--> */
 body {
  /*  background-image: url('img/leaf.jpeg'); */
   background-image: linear-gradient(to right top, #190A05 , #870000);
@@ -42,16 +59,11 @@ position: relative;
                       <input type="submit" name="submit" value="Join Us"> 
                      
                        </form>
-                       <br>
+                       </div>
                        <form action="/login" class="smallbox" style="top: 440px;" method="get">
                          <input type="submit" name="submit" value="Wanna Logout!!"> 
                           <span th:if="${username != null}" style=" color: darkorange;" >Username Already exists!</span>
                         </form>
-                        
-                        
-                 
-                
-            </div>
         </div>
     </div>
 </div>
